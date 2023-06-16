@@ -9,5 +9,5 @@ jobs:
       - name: Call API route to trigger fetch jobs
         run: |
           curl --request GET \
-          --url 'https://stack-ranger.herokuapp.com/api/microservice' \
+          --url 'https://stack-ranger.romagnoli.me/api/microservice' \
           --header 'Authorization: ${{ secrets.AUTHORIZATION_HEADER }}' 
