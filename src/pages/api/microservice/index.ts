@@ -37,9 +37,8 @@ const fetchJobs = async function () {
     for (job of data.results) {
       const success = await writeJobToDb(job)
       if (!success) {
-        console.log('Added ' + numberJobsFetched + ' jobs to database.')
-        invalidPage = true
-        break
+        console.log('Skipped job')
+        continue
       }
       numberJobsFetched++
     }
