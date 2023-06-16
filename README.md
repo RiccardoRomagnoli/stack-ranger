@@ -6,7 +6,7 @@ Tell us with which stack want to work with and we will find the jobs for you.
 Or if you still know exactly which skills you should learn next, tell us about the job you are interested in and we will find the most relevant stack for you.
 
 ### Link to the app
-https://stack-ranger.herokuapp.com/
+https://stack-ranger.romagnoli.me/
 
 ### Tech Stack
 The application is built with the following stack:
