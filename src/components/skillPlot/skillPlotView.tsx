@@ -36,7 +36,7 @@ export const SkillPlotView = ({ skills, noSkillsFound, loading }: SkillPlotViewP
                   <div className="capitalize">{skill.name}</div>
                   {skill.icon.length > 0 && (
                     <div className="h-12 w-12 relative">
-                      <Image src={'/icons/' + skill.icon} alt={skill.icon} layout={'fill'} objectFit={'cover'} />
+                      <img src={skill.icon} alt='skill icon' className='object-scale-down h-12 w-12' />
                     </div>
                   )}
                 </li>
