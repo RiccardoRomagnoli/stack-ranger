@@ -1,14 +1,13 @@
-name: fetch-jobs-cron
+name: keep-db-alive
 on:
-#  schedule:
-#    - cron: '0 0 1 * *'
+  schedule:
+    - cron: '0 0 * * 0'
   workflow_dispatch:
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Call API route to trigger fetch jobs
+      - name: Call API
         run: |
           curl --request GET \
-          --url 'https://stack-ranger.romagnoli.me/api/microservice' \
-          --header 'Authorization: ${{ secrets.AUTHORIZATION_HEADER }}' 
+          --url 'https://stack-ranger.romagnoli.me/?role=Senior+Software+Engineer&search=skill'
